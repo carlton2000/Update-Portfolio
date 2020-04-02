@@ -282,6 +282,9 @@ text-align: center;
     display: block;
     font-size:12px;
   }
+  .wide{
+    font-size: 30px;
+  }
    .footer{
     font-size: 11px;
   }
