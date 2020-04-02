@@ -17,17 +17,24 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*Aligning the words in the centre of a certain space*/
+
 .cv{
 color: #f2f2f2;
 font-size: 50px;
 text-shadow: 5px 2px 8px #000000;
 text-align: center;
 }
+/*making this a specific heading*/
+
 .title{
 	font-size: 27px;
 	text-align: center;
 	text-shadow: 20px 2px 8px #000000;
 }
+/*making this a specific heading*/
+
+/*This makes a certain tag responsive , where-ever you adjust your screen the information will display accordingly*/
 @media screen and (max-width: 600px) {
   .cv {
     font-size: 30px;
@@ -42,6 +49,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*giving the nav bar a color so it displays better*/
 .topnav {
   overflow: hidden;
   background-color: #000;
@@ -57,6 +65,7 @@ body {
   font-size: 17px;
 }
 
+/*as soon as you hover over it, the wording changes colour and glows*/
 .topnav a:hover {
   background-color: #ddd;
   color: black;
@@ -91,9 +100,6 @@ body {
     display: block;
     text-align: left;
   }
-  .par{
-  	font-size: 20px;
-  }
 }
 
 .head{
@@ -103,21 +109,15 @@ body {
 	margin-right: 10%;
 }
 
-#about{
-	margin-left: 10%;
-	margin-right: 10%;
-	display: flex; 
-	box-sizing: border-box;
-}
-
 .prof{
-  width:50%;
+  width:100%;
   height:auto;
   border-radius: 17%;
   border: 1px solid #ddd;
   padding: 5px;
 }
 
+/*This displays the table with a specific line around it*/
 table {
   border-collapse: collapse;
   border-radius: 17%;
@@ -125,6 +125,7 @@ table {
   width: 100%;
   border: 1px solid #ddd;
 }
+/*This displays the table*/
 
 th, td {
   text-align: left;
@@ -135,3 +136,54 @@ tr:nth-child(even) {
   background-color:  #94b8b8;
 }
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.containered {
+  border-radius: 5px;
+  width: 100%
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.columned {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columned, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
