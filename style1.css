@@ -4,12 +4,19 @@
 	text-shadow: 5px 2px 8px #000000;
 	text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .par {
+    font-size: 15px;
+  }
+}
+/*This is centering the paragraph that is called an styling it*/
 
 .inset {
 	border-style: inset;
 	margin-left: 10%;
 	margin-right: 10%;
 }
+/*making a border around the specific object an aligning it with margins*/
 
 *{
 	box-sizing: border-box;
@@ -20,7 +27,6 @@
   width: 25%;
   text-align: center;
   border-radius: 100px;
-
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -58,7 +64,7 @@
 }
 @media screen and (max-width: 600px) {
   .colum {
-    width: 100%;
+    width: 50%;
     display: block;
     margin-bottom: 20px;
   }
@@ -70,7 +76,17 @@
   text-align: center;
 }
 
-.col {
+.coll {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 410px; /* Should be removed. Only for demonstration */
+  text-align: center;
+  transition: 1s;
+  opacity: 1.5;
+  border-radius: 5px;
+}
+.col{
   float: left;
   width: 50%;
   padding: 10px;
@@ -96,15 +112,19 @@
   .col {
     width: 100%;
   }
+   .coll{
+    width: 100%;
+  }
 }
 
 .educat{
   font-family: 'Solway', serif;
-
 }
+/*Giving it a certain font and style*/
 .under{
   text-decoration: underline;
 }
+/*underlining the headings*/
 
 .column {
   float: left;
@@ -156,11 +176,13 @@
   background-color: #2196f3;
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
+/*This has a certain glow to it only once its hovered over*/
 
 .wide{
   text-align: center;
   font-size: 50px;
 }
+/*Sizing the contact me icons*/
 
 #myBtn {
   display: none;
@@ -185,29 +207,32 @@
   background-color: #2196f3;
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
-
+/*This has a certain glow to it only once its hovered over*/
 .downloads{
   text-align: center;
   padding: 20px;
 }
+/*placing the button and giving it a certain size*/
 .download{
   align-items: center;
-  position: relative;
   display: inline-block;
   padding: 10px 15px;
-  color: #000000;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
   font-size: 10px;
   overflow: hidden;
-  transition: 0.2s;  
+  transition: 0.2s;
+  background-color: #000;  
 }
 .download:hover{
   color: #000000;
   background-color: #2196f3;
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
+/*This has a certain glow to it only once its hovered over*/
+
 .download span{
   position: absolute;
   display: block;
@@ -216,8 +241,49 @@
 .footer {
    height: 20px;
    bottom: 0;
+   background-color: #000;
    width: 100%;
-   color: #000;
+   color: #fff;
    text-align: center;
    font-family: 'Permanent Marker', cursive;
 }
+
+/*displaying the footer at the bottom with a certain font and a color*/
+
+}
+.buttoned{
+text-align: center;     
+}
+
+.buttoned li a:hover{
+  color: #000000;
+  background-color: #2196f3;
+  box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+}
+
+.navs{               /*changes in the nav bar and displaying it*/
+  list-style-type: none;
+  color: #fff;
+  text-align: center;
+}
+.navs li{
+  display: inline-block;            /*making everything inline*/
+}
+.navs li a{
+  text-decoration: none;         /*getting rid of the bullets*/
+  color: #14100F;                /*changing the color of the wording*/ 
+  padding: 20px 20px;
+  transition: 0.5s ease;
+  color: #000;            
+}
+@media screen and (max-width: 600px) {
+  .navs a {
+    float: none;
+    display: block;
+    font-size:12px;
+  }
+   .footer{
+    font-size: 11px;
+  }
+}
+
