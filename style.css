@@ -28,9 +28,9 @@ text-align: center;
 /*making this a specific heading*/
 
 .title{
-	font-size: 27px;
-	text-align: center;
-	text-shadow: 20px 2px 8px #000000;
+  font-size: 27px;
+  text-align: center;
+  text-shadow: 20px 2px 8px #000000;
 }
 /*making this a specific heading*/
 
@@ -40,12 +40,11 @@ text-align: center;
     font-size: 30px;
   }
   .title{
-  	font-size: 20px;
+    font-size: 20px;
   }
 }
 
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -103,10 +102,10 @@ body {
 }
 
 .head{
-	text-align: center;
-	text-decoration: underline;
-	margin-left: 10%;
-	margin-right: 10%;
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .prof{
@@ -154,7 +153,9 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  color: #000000;
+  background-color: #2196f3;
+  box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
 }
 
 /* Style the container/contact section */
