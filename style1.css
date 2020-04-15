@@ -1,8 +1,8 @@
 .par{
-	margin-left: 10%;
-	margin-right: 10%;
-	text-shadow: 5px 2px 8px #000000;
-	text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-shadow: 5px 2px 8px #000000;
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
   .par {
@@ -12,14 +12,14 @@
 /*This is centering the paragraph that is called an styling it*/
 
 .inset {
-	border-style: inset;
-	margin-left: 10%;
-	margin-right: 10%;
+  border-style: inset;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 /*making a border around the specific object an aligning it with margins*/
 
 *{
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 .colum {
   padding: 5px;
@@ -31,8 +31,8 @@
 
 /* Remove extra left and right margins, due to padding */
 .rows {
-	margin: 0;
-	padding: 5px;
+  margin: 0;
+  padding: 5px;
 }
 
 /* Clear floats after the columns */
@@ -58,9 +58,9 @@
   border-radius: 100px;
   transition: 1s;
   opacity: 1.5;
-  	color: #000000;
-	background-color: #2196f3;
-	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    color: #000000;
+  background-color: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
 @media screen and (max-width: 600px) {
   .colum {
@@ -120,9 +120,17 @@
 .educat{
   font-family: 'Solway', serif;
 }
+
+.educat{
+  list-style-type: none;
+}
 /*Giving it a certain font and style*/
 .under{
   text-decoration: underline;
+}
+
+.under li{
+  list-style-type: none;
 }
 /*underlining the headings*/
 
@@ -177,10 +185,19 @@
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
 /*This has a certain glow to it only once its hovered over*/
-
-.wide{
+.move{
   text-align: center;
+}
+.wide{
   font-size: 50px;
+  display: inline;
+}
+
+.wide:hover{
+  color: #000000;
+  background-color: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  border-radius: 20px;
 }
 /*Sizing the contact me icons*/
 
@@ -197,8 +214,9 @@
   cursor: pointer;
   padding: 15px;
   border-radius: 20px;
-    transition: 1s;
+  transition: 1s;
   opacity: 1.5;
+  margin: auto;
 
 }
 
@@ -239,7 +257,7 @@
 }
 
 .footer {
-   height: 20px;
+   height: 50px;
    bottom: 0;
    background-color: #000;
    width: 100%;
@@ -289,4 +307,3 @@ text-align: center;
     font-size: 11px;
   }
 }
-
