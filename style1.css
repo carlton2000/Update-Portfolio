@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  margin: auto;
+}
+
 .par{
   margin-left: 10%;
   margin-right: 10%;
@@ -18,9 +23,6 @@
 }
 /*making a border around the specific object an aligning it with margins*/
 
-*{
-  box-sizing: border-box;
-}
 .colum {
   padding: 5px;
   float: left;
