@@ -1,6 +1,6 @@
 .parallax {
   /* The image used */
-  background-image: url("header.jpg");
+  background-image: url("Images/header.jpg");
 
   /* Set a specific height */
   min-height: 500px; 
@@ -161,7 +161,7 @@ input[type=submit]:hover {
 /* Style the container/contact section */
 .containered {
   border-radius: 5px;
-  width: 100%
+  width: 100%;
   background-color: #f2f2f2;
   padding: 10px;
 }
