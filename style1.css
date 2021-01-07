@@ -163,7 +163,7 @@
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 10px;
+  padding: 11px;
   text-align: center;
   background-color: #f1f1f1;
 }
@@ -171,7 +171,7 @@
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
-  color: white;
+  color: #ffff;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -211,7 +211,7 @@
   border: none;
   outline: none;
   background-color: #000;
-  color: white;
+  color: #ffff;
   cursor: pointer;
   padding: 15px;
   border-radius: 20px;
