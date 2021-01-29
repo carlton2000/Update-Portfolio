@@ -269,9 +269,9 @@
 
 /*displaying the footer at the bottom with a certain font and a color*/
 
-}
 .buttoned{
-text-align: center;     
+text-align: center; 
+size: 20px;    
 }
 
 .buttoned li a:hover{
@@ -284,6 +284,7 @@ text-align: center;
   list-style-type: none;
   color: #fff;
   text-align: center;
+  size: 20px;   
 }
 .navs li{
   display: inline-block;            /*making everything inline*/
