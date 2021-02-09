@@ -50,17 +50,7 @@
   }
 }
 /* Style the counter cards */
-.card:hover {
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
-  text-align: center;
-  /*background-color: rgba(181, 201, 201, 0.2);*/
-  border-radius: 100px;
-  transition: 1s;
-  opacity: 1.5;
-    color: #000000;
-  background-color: #2196f3;
-  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-}
+
 @media screen and (max-width: 600px) {
   .colum {
     width: 50%;
@@ -89,7 +79,6 @@
   float: left;
   width: 50%;
   padding: 10px;
-  height: 430px; /* Should be removed. Only for demonstration */
   text-align: center;
   transition: 1s;
   opacity: 1.5;
@@ -118,6 +107,7 @@
 
 .educat{
   font-family: 'Solway', serif;
+  text-align: center;
 }
 
 .educat{
@@ -163,8 +153,62 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 11px;
   text-align: center;
-  background-color: #f1f1f1;
+  perspective: 500px;
 }
+
+.content {
+  width: 100%;
+  height: 100%;
+  
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  line-height: 10px;
+  text-align: center;
+  font-size: 15px;
+  backface-visibility: hidden;
+}
+
+.back {
+  color: #000000;
+  transform: rotateY( 180deg );
+  font-size: 30px;
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.htm {width: 90%; background-color: #4CAF50; text-align: center;}
+.css {width: 80%; background-color: #4CAF50; text-align: center;}
+.jar {width: 65%; background-color: #4CAF50; text-align: center;}
+.pyt {width: 45%; background-color: #4CAF50; text-align: center;}
+.nod {width: 84%; background-color: #4CAF50; text-align: center;}
+.exp {width: 90%; background-color: #4CAF50; text-align: center;}
+.jq {width: 30%; background-color: #4CAF50; text-align: center;}
+.rea {width: 50%; background-color: #4CAF50; text-align: center;}
+.vue {width: 70%; background-color: #4CAF50; text-align: center;}
+.fire {width: 60%; background-color: #4CAF50; text-align: center;}
+.mon {width: 80%; background-color: #4CAF50; text-align: center;}
+.pos {width: 50%; background-color: #4CAF50; text-align: center;}
 
 .button {
   background-color: #4CAF50; /* Green */

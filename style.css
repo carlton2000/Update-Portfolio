@@ -44,6 +44,9 @@ text-align: center;
     padding: 10px;
     font-size: 35px;
   }
+  .topnav{
+    position: fixed;
+  }
 }
 
 body {
@@ -54,6 +57,8 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #000;
+  position: sticky;
+  top: 0;
 }
 
 .topnav a {
@@ -130,10 +135,14 @@ body {
   color: white;
 }
 
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.pyt {width: 60%; background-color: #808080;}
+.blocked{
+  padding: 10px;
+}
+
+.vue {width: 63%; background-color: #1e2088;}
+.node {width: 80%; background-color: #5bdf8d;}
+.js {width: 55%; background-color: #e7f436;}
+.pyt {width: 50%; background-color: #bb2b26;}
 
 /*This displays the table with a specific line around it*/
 table {
@@ -206,8 +215,12 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+  /* .blocked{
+    padding: ;
+  } */
 }
 
 .round{
   border-radius: 50px;
 }
+
