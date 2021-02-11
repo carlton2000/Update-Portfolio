@@ -56,9 +56,10 @@ body {
 /*giving the nav bar a color so it displays better*/
 .topnav {
   overflow: hidden;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .topnav a {
@@ -91,6 +92,9 @@ body {
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  .myTopnav{
+    position: sticky;
   }
 }
 
@@ -224,3 +228,4 @@ input[type=submit]:hover {
   border-radius: 50px;
 }
 
+#more {display: none;}

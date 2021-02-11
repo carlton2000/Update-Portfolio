@@ -437,6 +437,7 @@
                             </a>
                         </div>
                     </div>
+                    <span id="dots"></span><span id="more">
                     <div class="column">
                         <div>
                             <h3>Music App</h3>
@@ -476,7 +477,56 @@
                             </a>
                         </div>
                     </div>
+                    
+                    <div class="column">
+                        <div>
+                            <h3>Cake-Store</h3>
+                            <img src="Images/coming.gif" class="round" height="100px" width="100px">
+                            <br />
+                            <!-- <a href="https://carlton2000.github.io/Cake-Store/" class="round" target="_blank"> -->
+                                <button class="button button1">View More</button>
+                            <!-- </a> -->
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <h3>Cake-Store</h3>
+                            <img src="Images/coming.gif" class="round" height="100px" width="100px">
+                            <br />
+                            <!-- <a href="https://carlton2000.github.io/Cake-Store/" class="round" target="_blank"> -->
+                                <button class="button button1">View More</button>
+                            <!-- </a> -->
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <h3>Cake-Store</h3>
+                            <img src="Images/coming.gif" class="round" height="100px" width="100px">
+                            <br />
+                            <!-- <a href="https://carlton2000.github.io/Cake-Store/" class="round" target="_blank"> -->
+                                <button class="button button1">View More</button>
+                            <!-- </a> -->
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <h3>Cake-Store</h3>
+                            <img src="Images/coming.gif" class="round" height="100px" width="100px">
+                            <br />
+                            <!-- <a href="https://carlton2000.github.io/Cake-Store/" class="round" target="_blank"> -->
+                                <button class="button button1">View More</button>
+                            <!-- </a> -->
+                        </div>
+                    </div>
+                </span>
                 </div>
+                <br/>
+                <br/>
+                <!-- <a href="https://github.com/carlton2000" target="_blank"> -->
+                <button onclick="seeMore()" id="myBtn" class="button button1">See More Projects</button>
+               <!-- </a> -->
+               <br/>
+               <br/>
             </div>
         </div>
         
@@ -569,6 +619,22 @@
                 x.className = "topnav";
             }
         }
+
+function seeMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "See More Projects"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "See Less Projects"; 
+    moreText.style.display = "inline";
+  }
+}
         </script>
 </body>
 
