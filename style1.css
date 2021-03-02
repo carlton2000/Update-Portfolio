@@ -1,22 +1,52 @@
 *{
   box-sizing: border-box;
 }
+/* .image-b{
+  background-image: url("Images/recent.jpg");
+} */
 
 .par{
+  padding: 40px;
   font-size: 25px;
-  text-shadow: 5px 2px 8px #000000;
 }
 @media screen and (max-width: 600px) {
   .par {
     font-size: 15px;
+    padding: 50px;
   }
 }
 /*This is centering the paragraph that is called an styling it*/
+.part{
+  padding: 50px;
+  font-size: 25px;
+  margin-left: 20%;
+  
+}
+@media screen and (max-width: 600px) {
+  .part {
+    font-size: 15px;
+    margin-left: 0%;
+  }
+}
 
 .inset {
   border-style: inset;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.layed {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.three-layed:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /*making a border around the specific object an aligning it with margins*/
 
@@ -70,7 +100,7 @@
   width: 50%;
   padding: 10px;
   height: 410px; /* Should be removed. Only for demonstration */
-  text-align: center;
+  
   transition: 1s;
   opacity: 1.5;
   border-radius: 5px;
@@ -199,8 +229,8 @@
 
 .htm {width: 90%; background-color: #4CAF50; text-align: center;}
 .css {width: 80%; background-color: #4CAF50; text-align: center;}
-.jar {width: 65%; background-color: #4CAF50; text-align: center;}
-.pyt {width: 45%; background-color: #4CAF50; text-align: center;}
+.jar {width: 84%; background-color: #4CAF50; text-align: center;}
+.pyt {width: 82%; background-color: #4CAF50; text-align: center;}
 .nod {width: 84%; background-color: #4CAF50; text-align: center;}
 .exp {width: 90%; background-color: #4CAF50; text-align: center;}
 .jq {width: 30%; background-color: #4CAF50; text-align: center;}
@@ -222,11 +252,11 @@
   cursor: pointer;
 }
 
-.button:hover{
+/* .button:hover{
   color: #000000;
   background-color: #2196f3;
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-}
+} */
 /*This has a certain glow to it only once its hovered over*/
 .move{
   text-align: center;
@@ -236,12 +266,12 @@
   display: inline;
 }
 
-.wide:hover{
+/* .wide:hover{
   color: #000000;
   background-color: #2196f3;
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
   border-radius: 20px;
-}
+} */
 /*Sizing the contact me icons*/
 
 #myBtn {
@@ -263,11 +293,11 @@
 
 }
 
-#myBtn:hover {
+/* #myBtn:hover {
     color: #000000;
   background-color: #2196f3;
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-}
+} */
 /*This has a certain glow to it only once its hovered over*/
 .downloads{
   text-align: center;
@@ -277,26 +307,32 @@
 .download{
   align-items: center;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 15px 17px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 15px;
   overflow: hidden;
   transition: 0.2s;
   background-color: #000;  
 }
-.download:hover{
+/* .download:hover{
   color: #000000;
   background-color: #2196f3;
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-}
+} */
 /*This has a certain glow to it only once its hovered over*/
 
 .download span{
   position: absolute;
   display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .download {
+    padding: 7px 8px ;
+  }
 }
 
 .footer {
@@ -316,11 +352,11 @@ text-align: center;
 size: 20px;    
 }
 
-.buttoned li a:hover{
+/* .buttoned li a:hover{
   color: #000000;
   background-color: #2196f3;
   box-shadow: 0 0 5px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
-}
+} */
 
 .navs{               /*changes in the nav bar and displaying it*/
   list-style-type: none;
@@ -351,3 +387,4 @@ size: 20px;
     font-size: 11px;
   }
 }
+

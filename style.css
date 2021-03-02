@@ -1,9 +1,9 @@
 .parallax {
   /* The image used */
-  background-image: url("Images/header.jpg");
+  background-image: url("Images/home-bg.jpg");
 
   /* Set a specific height */
-  min-height: 500px; 
+  min-height: 900px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -11,41 +11,129 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.parallaxed{
+    /* The image used */
+    background-image: url("Images/header.jpg");
+  
+    /* Set a specific height */
+    min-height: 600px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+  width:150px;
+  height:100px;
+  /* border-radius: 50%;
+  border: 1px solid rgb(12, 11, 11); */
+  float: left;
+}
 .cen{
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 /*Aligning the words in the centre of a certain space*/
 
+
+.scrolldown{
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+.scrolldown span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+.scrolldown span:nth-child(1){
+  transform: translate(-15px, -15px);
+  animation-delay: -0.4s;
+}
+.scrolldown span:nth-child(2){
+  transform: translate(0, 0);
+  animation-delay: -0.2s;
+}
+.scrolldown span:nth-child(3){
+  transform: translate(15px, 15px);
+  animation-delay: 0s;
+}
+@keyframes animate{
+  0%{
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25%{
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%, 100%{
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+
 .cv{
 color: #f2f2f2;
-font-size: 50px;
+font-size: 70px;
 text-shadow: 5px 2px 8px #000000;
 text-align: center;
 }
+.cvs{
+  color: #000000;
+  font-size: 50px;
+  text-shadow: 5px 2px 8px #ffffff;
+  text-align: center;
+  }
 /*making this a specific heading*/
 
 .title{
   font-size: 35px;
   text-align: center;
-  text-shadow: 20px 2px 8px #000000;
+  text-shadow: 20px 2px 8px #ffffff;
 }
 /*making this a specific heading*/
 
 /*This makes a certain tag responsive , where-ever you adjust your screen the information will display accordingly*/
 @media screen and (max-width: 600px) {
   .cv {
-    padding: 10px;
-    font-size: 33px;
+    padding: 5px;
+    font-size: 29px;
   }
   .title{
-    padding: 10px;
-    font-size: 35px;
+    padding: 25px;
+    font-size: 20px;
   }
   .topnav{
     position: fixed;
+  }
+  .logo{
+    width: 90px;
+    height: 90px;
+  }
+  .parallax{
+    min-height: 500px;
+  }
+  .parallaxed{
+    min-height: 1150px;
   }
 }
 
@@ -56,20 +144,23 @@ body {
 /*giving the nav bar a color so it displays better*/
 .topnav {
   overflow: hidden;
-  background-color: rgb(0, 0, 0);
+  background-color: #fff;
   position: sticky;
   top: 0;
   z-index: 1;
+  padding: 10px;
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 15px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
+  text-shadow: 10px 6px 15px #000000;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 }
 
 /*as soon as you hover over it, the wording changes colour and glows*/
@@ -78,10 +169,10 @@ body {
   color: black;
 }
 
-.topnav a.active {
+/* .topnav a.active {
   background-color: #1a1aff;
   color: white;
-}
+} */
 
 .topnav .icon {
   display: none;
@@ -95,11 +186,22 @@ body {
   }
   .myTopnav{
     position: sticky;
+    z-index: 1;
+  }
+  .cen{
+    top: 48%;
+  }
+  .title{
+    padding: 10px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+    padding: 5px;
+    z-index: 1;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -108,11 +210,16 @@ body {
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 30px;
+    z-index: 1;
+   
   }
 }
 
 .head{
+  font-size: 35px;
   text-align: center;
   text-decoration: underline;
   margin-left: 10%;
@@ -123,7 +230,7 @@ body {
   width:100%;
   height:auto;
   border-radius: 17%;
-  border: 1px solid rgb(12, 11, 11);
+  /* border: 1px solid rgb(12, 11, 11); */
   padding: 5px;
 }
 
@@ -247,6 +354,7 @@ body {
   margin-top: 20px;
   padding: 1em 0;
   list-style-type: none;
+
 }
 
 .timeline:before {
@@ -419,6 +527,7 @@ body {
 .timeline {
  	width: 100%;
 	padding: 4em 0 1em 0;
+  z-index: 0;
 }
 
 .timeline li {
@@ -429,12 +538,14 @@ body {
 .direction-r {
 	float: none;
 	width: 100%;
+  
 
 	text-align: center;
 }
 
 .flag-wrapper {
 	text-align: center;
+
 }
 
 .flag {
@@ -455,7 +566,7 @@ body {
 	background: #fff;
 	border-radius: 10px;
 	border: 4px solid rgb(255,80,80);
-	z-index: 10;
+	
 }
 
 .direction-l .flag:after,
@@ -471,6 +582,7 @@ body {
 	border-bottom-color: rgb(255,255,255);
 	border-width: 8px;
 	pointer-events: none;
+  
 }
 
 .time-wrapper {
