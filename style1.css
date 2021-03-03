@@ -7,7 +7,7 @@
 
 .par{
   padding: 40px;
-  font-size: 25px;
+  font-size: 20px;
 }
 @media screen and (max-width: 600px) {
   .par {
@@ -18,8 +18,8 @@
 /*This is centering the paragraph that is called an styling it*/
 .part{
   padding: 50px;
-  font-size: 25px;
-  margin-left: 20%;
+  font-size: 20px;
+  margin-left: 15%;
   
 }
 @media screen and (max-width: 600px) {
@@ -262,6 +262,7 @@
   text-align: center;
 }
 .wide{
+  color: #000;
   font-size: 50px;
   display: inline;
 }
