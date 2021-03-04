@@ -7,7 +7,7 @@
 
 .par{
   padding: 40px;
-  font-size: 20px;
+  font-size: 22px;
 }
 @media screen and (max-width: 600px) {
   .par {
