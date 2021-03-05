@@ -208,7 +208,7 @@
 	animation: ani-mouse 2.5s linear infinite;
 }
 
-span
+#spanned
 {
   display: block;
   width: 5px;
