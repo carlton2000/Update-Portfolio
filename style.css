@@ -156,7 +156,7 @@ body {
   top: 0;
   z-index: 1;
   padding: 10px;
-  box-shadow: 5px 5px 2px rgb(165, 161, 161);
+  box-shadow: 2px 2px 2px rgb(88, 86, 86);
 }
 
 .topnav a {

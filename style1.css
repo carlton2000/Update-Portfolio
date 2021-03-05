@@ -13,11 +13,12 @@
   .par {
     font-size: 15px;
     padding: 50px;
+    /* white-space: pre-line; */
   }
 }
 /*This is centering the paragraph that is called an styling it*/
 .part{
-  padding: 50px;
+  padding: 10px;
   font-size: 20px;
   margin-left: 15%;
   
