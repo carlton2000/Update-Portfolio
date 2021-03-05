@@ -59,7 +59,7 @@
   border-bottom: 2px solid rgb(243, 240, 240);
   border-right: 2px solid rgb(247, 246, 246);
   animation: animate 1.5s linear infinite;
-  opacity: 0;
+  opacity: 5;
 }
 .scrolldown span:nth-child(1){
   transform: translate(-15px, -15px);
