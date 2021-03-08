@@ -3,7 +3,7 @@ html{
 }
 .parallax {
   /* The image used */
-  background-image: url("Images/header4.jpg");
+  background-image: url("Images/header2.jpeg");
 
   /* Set a specific height */
   min-height: 900px; 
@@ -16,7 +16,7 @@ html{
 }
 .parallaxed{
     /* The image used */
-    background-image: url("Images/header.jpg");
+    background-image: url("Images/header6.jpg");
   
     /* Set a specific height */
     min-height: 600px; 
@@ -27,11 +27,24 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parall{
+  /* The image used */
+  background-image: url("Images/header.jpg");
+
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .move{
   text-align: center;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding: 5px;
+  /* margin-left: 2%;
+  margin-right: 2%; */
+  /* padding: 5px; */
 }
 .logo{
   width:170px;
@@ -332,7 +345,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
-  padding: 10px;
   box-shadow: 2px 2px 2px rgb(88, 86, 86);
 }
 
@@ -343,12 +355,9 @@ body {
   padding: 20px 15px;
   text-decoration: none;
   font-size: 15px;
-  /* text-shadow: 10px 6px 15px #000000; */
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
-  /* color: #fff; */
   text-transform: uppercase;
-  /* text-decoration: none; */
   letter-spacing: 0.15em;
   
   display: inline-block;
@@ -735,12 +744,6 @@ body {
   line-height: 1.5em;
   text-align: left;
 }
-
-/* .desc:hover{
-  color: #000000;
-  background-color: #2196f3;
-  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-} */
 
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
