@@ -325,7 +325,8 @@
    width: 100%;
    color: #fff;
    text-align: center;
-   font-family: 'Permanent Marker', cursive;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: bold;
 }
 
 /*displaying the footer at the bottom with a certain font and a color*/
