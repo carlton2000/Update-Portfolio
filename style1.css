@@ -302,8 +302,8 @@
 } */
 /*This has a certain glow to it only once its hovered over*/
 .downloads{
-  text-align: center;
   padding: 20px;
+  margin-left: 13%;
 }
 /*placing the button and giving it a certain size*/
 .download{
