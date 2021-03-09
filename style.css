@@ -47,8 +47,8 @@ html{
   /* padding: 5px; */
 }
 .logo{
-  width:300px;
-  height:100px;
+  width:250px;
+  height:80px;
   /* border-radius: 50%;
   border: 1px solid rgb(12, 11, 11); */
   float: left;
@@ -360,7 +360,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   display: inline-block;
-  padding: 35px 20px;
+  padding: 24px 20px;
   position: relative;
 }
 
