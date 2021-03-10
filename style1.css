@@ -4,23 +4,10 @@
 /* .image-b{
   background-image: url("Images/recent.jpg");
 } */
-
-.par{
-  padding: 40px;
-  font-size: 22px;
-}
-@media screen and (max-width: 600px) {
-  .par {
-    font-size: 15px;
-    padding: 50px;
-    /* white-space: pre-line; */
-  }
-}
-/*This is centering the paragraph that is called an styling it*/
 .part{
   padding: 10px;
   font-size: 20px;
-  margin-left: 15%;
+  margin-left: 10%;
   
 }
 @media screen and (max-width: 600px) {
@@ -29,9 +16,24 @@
     margin-left: 0%;
   }
 }
+.par{
+  font-size: 19px;
+  margin-left: 20%;
+  padding-top: 65px;
+}
+
+@media screen and (max-width: 600px) {
+  .par {
+    font-size: 15px;
+    padding-top: 260px;
+    margin-left: 10%;
+    /* white-space: pre-line; */
+  }
+}
+/*This is centering the paragraph that is called an styling it*/
 
 .inset {
-  border-style: inset;
+  /* border-style: inset; */
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -290,15 +292,14 @@
 
 /*This has a certain glow to it only once its hovered over*/
 .downloads{
-  padding: 20px;
-  margin-left: 13%;
+    padding-top: 15px;
 }
 /*placing the button and giving it a certain size*/
 .download{
-  align-items: center;
   display: inline-block;
   padding: 15px 17px;
   color: #fff;
+  margin-left: 20%;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
