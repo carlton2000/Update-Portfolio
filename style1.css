@@ -371,4 +371,19 @@ size: 20px;
     font-size: 11px;
   }
 }
-
+.fa-facebook-square:before {
+  content: "\f082";
+  color: #000000;
+}
+.fa-twitter:before {
+  content: "\f099";
+  color: #000000;
+}
+.fa-github:before {
+  content: "\f09b";
+  color: #000000;
+}
+.fa-linkedin:before {
+  content: "\f08c";
+  color: #000000;
+}
